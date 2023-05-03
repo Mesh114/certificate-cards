@@ -1,18 +1,23 @@
 :root {
-    --primary: #464673;
-    --secondary: #262652;
+    --primary: #0f0027;
+    --secondary: #06065c;
     --dark: #020229;
-    --light: #a4a4af;
-    background-color: #2a2a44;
+    --light: white;
+    background-image: url('pattern\ bg.jpg')
   }
   
   * {
     margin: 0;
     padding: 0;
   }
-  
+     
+  @import url('telma.css');
+  @font-face {
+    font-family: 'Telma-Black.eot';
+    src: url('telma.css');
+  }
   body {
-    font-family: montserrat, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     width: 100%;
     min-height: 100vh;
   }
@@ -20,7 +25,7 @@
   .card {
     margin: 100px auto 0;
     width: 500px;
-    height: 600px;
+    height: 550px;
     perspective: 1000px;
   }
   
@@ -58,7 +63,8 @@
   
   .card__face--front h2 {
     color: #FFF;
-    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
   }
   
   .card__face--back {
@@ -128,18 +134,3 @@
     transform: scale(1.01);
     box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
   }
-  
-  @media only screen and (max-width: 30em){ 
-    
-    /* Diagnostic Styling. Delete When Done. */
-    body:before {
-         background: rgb(159, 122, 247);
-         content: "Mobile Size";
-    }
-
-    body {
-        display: flex;
-        flex-direction: column;
-    }
-    
-}
