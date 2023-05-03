@@ -124,6 +124,11 @@
     font-size: 18px;
     line-height: 1.4;
   }
+  .card:hover {
+    transform: scale(1.01);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+  }
+  
   @media only screen and (max-width: 30em){ 
     
     /* Diagnostic Styling. Delete When Done. */
